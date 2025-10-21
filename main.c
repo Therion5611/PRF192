@@ -3,14 +3,6 @@
 
 int sphenic(int n) {
 	int res = 0;
-	int count = 0;
-	while (n%2 == 0) {
-		count++;
-		n /= 2;
-	}
-	if (count >= 2) return 0;
-    if (count == 1) res++;
-	
 	for (int i = 2; i <= sqrt(n); i++) {
 		int count = 0;
 		while(n%i==0) {
